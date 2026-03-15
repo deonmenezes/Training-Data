@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NomadicML — Physical AI Platform</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">NomadicML</div>
+        <nav>
+          <a href="#products">Products</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#how">How It Works</a>
+          <a href="#api">API</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">UNLOCK PHYSICAL AI</p>
+            <h1>Turn robotic and driving video into actionable intelligence.</h1>
+            <p>
+              Find edge cases, monitor safety regressions, and curate high-value
+              training data for automotive, construction, and robotics teams.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="#api">Use Live API</a>
+              <a class="btn ghost" href="https://docs.nomadicml.com/" target="_blank" rel="noreferrer">Read Docs</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h3>Core Workflow</h3>
+            <ol>
+              <li><strong>Find</strong> key moments in video</li>
+              <li><strong>Monitor</strong> compliance and safety</li>
+              <li><strong>Curate</strong> high-quality datasets</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="strip">
+        <div class="container trust">
+          <p>Trusted by industry leaders</p>
+          <div class="tags">
+            <span>ZOOX</span><span>Bedrock</span><span>NATIX</span><span>Mitsubishi</span><span>Autoware</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="solutions" class="section container">
+        <h2>Industry Solutions</h2>
+        <div class="cards three">
+          <article class="card">
+            <h3>Automotive</h3>
+            <p>Find rare driving maneuvers faster and improve AV training loops.</p>
+          </article>
+          <article class="card">
+            <h3>Construction</h3>
+            <p>Catch site safety risk, segment activity, and prioritize incidents.</p>
+          </article>
+          <article class="card">
+            <h3>Robotics</h3>
+            <p>Accelerate VLA training with real-world deployment footage.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how" class="section alt">
+        <div class="container">
+          <h2>How Nomadic Works</h2>
+          <div class="cards three">
+            <article class="card">
+              <h3>Find</h3>
+              <p>Automatically surface high-value events from massive video archives.</p>
+            </article>
+            <article class="card">
+              <h3>Monitor</h3>
+              <p>Track compliance and field safety with continuous analysis.</p>
+            </article>
+            <article class="card">
+              <h3>Curate</h3>
+              <p>Build model-ready datasets with less manual review overhead.</p>
+            </article>
+          </div>
+          <div class="stats">
+            <div><strong>99.8%</strong><span>Process-time reduction</span></div>
+            <div><strong>>95%</strong><span>Model accuracy target</span></div>
+            <div><strong>5 sec</strong><span>AI response vs manual review hours</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="section container">
+        <h2>Product Surface</h2>
+        <div class="tags product-tags">
+          <span>Find</span><span>Monitor</span><span>Curate</span><span>Our Models</span><span>Our API</span><span>VLA Annotations</span>
+        </div>
+      </section>
+
+      <section id="api" class="section container">
+        <h2>Live NomadicML API Console</h2>
+        <p class="muted">
+          This uses your server-side <code>NOMADICML_API_KEY</code> from <code>.env</code>.
+        </p>
+
+        <div class="api-grid">
+          <article class="card">
+            <h3>1) Verify Auth</h3>
+            <button id="verifyBtn" class="btn primary">Verify API Key</button>
+            <pre id="verifyOut" class="output">Click “Verify API Key”</pre>
+          </article>
+
+          <article class="card">
+            <h3>2) Analyze Video URL</h3>
+            <label>Video URL</label>
+            <input id="videoUrl" placeholder="https://...mp4" />
+
+            <label>Custom Event</label>
+            <input id="customEvent" value="Find all instances of ego vehicle straddling two lanes" />
+
+            <label>Category</label>
+            <input id="customCategory" value="driving" />
+
+            <button id="analyzeBtn" class="btn primary">Run Analysis</button>
+            <pre id="analyzeOut" class="output">Provide a video URL, then run analysis.</pre>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Product</h4>
+          <a href="#">Find</a><a href="#">Monitor</a><a href="#">Curate</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="https://docs.nomadicml.com/" target="_blank" rel="noreferrer">Docs</a>
+          <a href="https://www.nomadicml.com/pricing" target="_blank" rel="noreferrer">Pricing</a>
+          <a href="https://app.nomadicml.com/live-demo" target="_blank" rel="noreferrer">Try Demo</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
